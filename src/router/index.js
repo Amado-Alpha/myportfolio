@@ -36,17 +36,18 @@ const routes = [
   },
   {
     path: "/project/:id?",
-    name: "single-project",
+    name: "project-details",
     // route level code-splitting
     // this generates a separate chunk (projects.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "projects" */ "../views/SingleProject.vue"),
+      import(/* webpackChunkName: "projects" */ "../views/ProjectDetails.vue"),
     meta: {
       title: "Alpha - Single Project",
     },
     props: true,
   },
+
   {
     path: "/contact",
     name: "Contact",

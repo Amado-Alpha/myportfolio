@@ -1,16 +1,41 @@
 <template>
 	<div class="container mx-auto mt-10 sm:mt-20">
+
+
 		<!-- Project header -->
 		<ProjectHeader :singleProjectHeader="singleProjectHeader" />
 
-		<!-- Project gallery -->
-		<ProjectGallery :projectImages="projectImages" />
+		<!-- Conditionally show the in-progress message -->
+		<div v-if="projectInfo.status === 'ongoing'" class="" role="alert">
+			<div class="flex flex-col items-center justify-center">
+				<!-- Illustration -->
+				<img src="@/assets/images/codeTyping.svg" alt="Project Under Development"
+					class="w-64 h-64 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mb-6" />
 
-		<!-- Project information -->
-		<ProjectInfo :projectInfo="projectInfo" />
+				<!-- Message -->
+				<h1 class="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">This Project is Currently Under
+					Development</h1>
+				<p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+					I am working hard to bring this project to life. Check back soon for updates!
+				</p>
 
-		<!-- Project related projects -->
-		<!-- <ProjectRelatedProjects :relatedProject="relatedProject" /> -->
+				<!-- Optional Button to Navigate Back or Home -->
+				<router-link to="/" class="text-primary dark:text-gray-100 font-medium hover:underline">
+					Return to Homepage
+				</router-link>
+			</div>
+		</div>
+
+		<div v-else>
+			<!-- Project gallery -->
+			<ProjectGallery :projectImages="projectImages" />
+
+			<!-- Project information -->
+			<ProjectInfo :projectInfo="projectInfo" />
+
+			<!-- Project related projects -->
+			<!-- <ProjectRelatedProjects :relatedProject="relatedProject" /> -->
+		</div>
 	</div>
 </template>
 
@@ -53,20 +78,14 @@ const projectImages = ref(projectData.value?.images);
 const projectInfo = ref({
 
 	featureDescriptions: projectData.value?.features,
-
 	objectivesHeading: 'Objective',
-
 	objectivesDetails: projectData.value?.projectObjective,
-
 	technologies: projectData.value?.technologies,
-
-	projectDetailsHeading: 'Challenge',
-
+	projectDetailsHeading: 'Brief description',
 	projectDetails: projectData.value?.projectDetails,
-
 	socialSharingsHeading: 'Link to live project',
-
-	link: projectData.value.link,
+	link: projectData.value?.link,
+	status: projectData.value?.status,
 
 	socialSharings: [
 		{

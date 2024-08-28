@@ -3,10 +3,11 @@
 const projects = [
   {
     id: 1,
-    title: "Google Health Platform",
+    title: "electronics store dynamic website",
     category: "Web Application",
     img: require("@/assets/images/web-project-2.jpg"),
     projectTag: "fullstack",
+    status: "done",
 
     images: [
       {
@@ -87,9 +88,10 @@ const projects = [
 
   {
     id: 2,
-    title: "Phoenix Digital Agency",
+    title: "Innovative task tracking app",
     category: "Mobile Application",
     img: require("@/assets/images/mobile-project-2.jpg"),
+    status: "ongoing",
   },
 
   {
@@ -97,6 +99,7 @@ const projects = [
     title: "Project Management UI",
     category: "UI/UX Design",
     img: require("@/assets/images/ui-project-1.jpg"),
+    status: "ongoing",
   },
 
   {
@@ -104,20 +107,23 @@ const projects = [
     title: "Cloud Storage Platform",
     category: "UI/UX Design",
     img: require("@/assets/images/ui-project-2.jpg"),
+    status: "ongoing",
   },
 
   {
     id: 5,
-    title: "React Social App",
+    title: "Finance tracker",
     category: "Mobile Application",
     img: require("@/assets/images/mobile-project-1.jpg"),
+    status: "ongoing",
   },
 
   {
     id: 6,
-    title: "Apple Design System",
+    title: "Wakala PA",
     category: "Web Application",
     img: require("@/assets/images/web-project-1.jpg"),
+    status: "ongoing",
   },
 ];
 

@@ -1,18 +1,3 @@
-<script>
-import feather from 'feather-icons';
-
-export default {
-	props: ['projectInfo'],
-
-	mounted() {
-		feather.replace();
-	},
-	updated() {
-		feather.replace();
-	},
-};
-</script>
-
 <template>
 	<div class="block sm:flex gap-0 sm:gap-10 mt-14 overflow-hidden">
 		<!-- Single project left section details -->
@@ -58,7 +43,7 @@ export default {
 					{{ projectInfo.socialSharingsHeading }}
 				</p>
 				<a :href="projectInfo?.link"
-					class="font-general-regular hover:text-blue-500 text-primary-dark dark:text-ternary-light dark:hover:text-blue-500">
+					class="font-general-regular hover:text-blue-700 text-blue-500 dark:text-ternary-light dark:hover:text-blue-700">
 					{{ projectInfo?.link }}
 				</a>
 			</div>
@@ -76,3 +61,21 @@ export default {
 		</div>
 	</div>
 </template>
+
+
+<script setup>
+import feather from 'feather-icons';
+import { onMounted, onUpdated } from 'vue';
+
+const props = defineProps({
+	projectInfo: Object,
+});
+
+onMounted(() => {
+	feather.replace();
+});
+
+onUpdated(() => {
+	feather.replace();
+});
+</script>

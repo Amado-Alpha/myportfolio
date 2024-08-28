@@ -1,29 +1,3 @@
-<script>
-import AboutMe from '@/components/about/AboutMe';
-import AboutCounter from '@/components/about/AboutCounter';
-import AboutClients from '@/components/about/AboutClients';
-import feather from 'feather-icons';
-
-export default {
-	name: 'About',
-	components: {
-		AboutMe,
-		AboutCounter,
-		AboutClients,
-	},
-	data: () => {
-		return {};
-	},
-	mounted() {
-		feather.replace();
-	},
-	updated() {
-		feather.replace();
-	},
-	methods: {},
-};
-</script>
-
 <template>
 	<div>
 		<!-- About me -->
@@ -34,11 +8,34 @@ export default {
 		<!-- About counter -->
 		<AboutCounter />
 
-		<!-- About counter -->
-		<div class="container mx-auto">
+		<!-- Clients -->
+		<!-- <div class="container mx-auto">
 			<AboutClients />
-		</div>
+		</div> -->
 	</div>
 </template>
+
+
+<script setup>
+import { onMounted, onUpdated } from 'vue';
+import feather from 'feather-icons';
+
+// Importing components
+import AboutMe from '@/components/about/AboutMe.vue';
+import AboutCounter from '@/components/about/AboutCounter.vue';
+import AboutClients from '@/components/about/AboutClients.vue';
+
+
+
+// Lifecycle hooks
+onMounted(() => {
+	feather.replace();
+});
+
+onUpdated(() => {
+	feather.replace();
+});
+</script>
+
 
 <style scoped></style>

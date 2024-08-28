@@ -1,6 +1,6 @@
 <template>
 
-	<router-link :to="{ name: 'single-project', params: { id: project.id } }"
+	<router-link :to="{ name: 'project-details', params: { id: project.id } }"
 		class="project-slide rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
 		aria-label="Single Project" ref="">
 		<div>

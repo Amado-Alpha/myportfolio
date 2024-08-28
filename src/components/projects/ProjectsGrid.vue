@@ -68,7 +68,7 @@
 			your search criteria. Please try again with different keywords or categories.
 		</p>
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-			<ProjectSingle v-for="project in filteredProjects" :key="project.id" :project="project" />
+			<ProjectCard v-for="project in filteredProjects" :key="project.id" :project="project" />
 		</div>
 	</section>
 </template>
@@ -78,7 +78,7 @@
 
 import feather from 'feather-icons';
 import ProjectsFilter from './ProjectsFilter.vue';
-import ProjectSingle from './ProjectSingle.vue';
+import ProjectCard from './ProjectCard.vue';
 import projects from '../../data/projects';
 import { ref, computed, onMounted } from 'vue';
 
