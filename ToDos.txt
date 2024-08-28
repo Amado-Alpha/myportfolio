@@ -1,0 +1,12 @@
+1. Attach a CV to the link. Done
+2. Add another illustrastion.
+3. Get rid of the brands section (This will be valid after i have worked with a certain number of cli
+   ents already). Research what other section you can replace it with in a moment to make the portfolio
+   content.
+4. Prepare project screenshots. Done
+5. Arrange and refactor code.
+6. Push to github and host it.
+7. Learning about eslint and vue.
+8. Add animation to project tiles.
+
+

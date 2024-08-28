@@ -1,0 +1,16 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="" height="" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+    <style type="text/css">
+        .st0{fill:#6c63ff;} /* Dark Blue Circle */
+        .st1{fill:#000000;} /* White A */
+        .st2{font-family:'Arial'; font-weight:bold;}
+        .st3{font-size:20px;}
+    </style>
+    <!-- Background Circle -->
+    <circle cx="44" cy="68" r="25" class="st0"/>
+
+    <!-- Letter A -->
+    <text x="44%" y="68%" class="st1 st2 st3" text-anchor="middle" dominant-baseline="middle">
+        as
+    </text>
+</svg>
