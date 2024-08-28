@@ -40,7 +40,7 @@
 			<!-- Single project social sharing -->
 			<div>
 				<p class="font-general-medium text-2xl text-ternary-dark dark:text-ternary-light mb-2">
-					{{ projectInfo.socialSharingsHeading }}
+					{{ projectInfo?.socialSharingsHeading }}
 				</p>
 				<a :href="projectInfo?.link"
 					class="font-general-regular hover:text-blue-700 text-blue-500 dark:text-ternary-light dark:hover:text-blue-700">
@@ -51,8 +51,8 @@
 
 		<!-- Single project right section details -->
 		<div class="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
-			<p class="font-general-medium text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
-				{{ projectInfo.projectDetailsHeading }}
+			<p class="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-7">
+				{{ projectInfo?.projectDetailsHeading }}
 			</p>
 			<p v-for="projectDetail in projectInfo.projectDetails" :key="projectDetail.id"
 				class="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light">

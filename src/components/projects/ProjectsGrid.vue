@@ -14,7 +14,7 @@
 			<h3 class="font-general-regular
 					text-center text-secondary-dark
 					dark:text-ternary-light
-					text-md
+					text-lg
 					sm:text-xl
 					font-normal
 					mb-4
@@ -23,6 +23,8 @@
 			</h3>
 			<div class="
 					flex
+					flex-col
+					lg:flex-row
 					justify-between
 					border-b border-primary-light
 					dark:border-secondary-dark
@@ -89,7 +91,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const projectsData = ref(projects);
-const projectsHeading = ref('Projects Portfolio');
+const projectsHeading = ref('Projects');
 const selectedCategory = ref('');
 const searchProject = ref('');
 

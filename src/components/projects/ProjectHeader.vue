@@ -1,13 +1,3 @@
-<script setup>
-
-const props = defineProps({
-	singleProjectHeader: {
-		type: String,
-		required: true
-	}
-})
-</script>
-
 <template>
 	<div class="overflow-hidden">
 		<!-- Project heading and meta info -->
@@ -29,3 +19,14 @@ const props = defineProps({
 		</div>
 	</div>
 </template>
+
+
+<script setup>
+
+const props = defineProps({
+	singleProjectHeader: {
+		type: String,
+		required: true
+	}
+})
+</script>
