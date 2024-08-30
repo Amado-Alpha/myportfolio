@@ -47,6 +47,7 @@
 					<input v-model="searchProject" class="font-general-medium
 						pl-3
 						pr-1
+						mx-auto
 						sm:px-4
 						py-2
 						border-1 border-gray-200

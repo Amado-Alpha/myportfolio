@@ -23,6 +23,8 @@ export default {
 	<select @change="$emit('filter', $event.target.value)" :name="select" :id="select" class="font-general-medium
 				px-4
 				py-2
+			    mx-auto
+				sm:mx-0
 				border-1 border-gray-200
 				dark:border-secondary-dark
 				rounded-lg
