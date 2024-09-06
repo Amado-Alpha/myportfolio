@@ -1,7 +1,7 @@
 <template>
 
 	<router-link :to="{ name: 'project-details', params: { id: project.id } }"
-		class="project-slide rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
+		class="project-slide relative rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
 		aria-label="Single Project" ref="">
 		<div>
 			<img :src="project.img" :alt="project.title" class="rounded-t-xl border-none" />
@@ -12,6 +12,16 @@
 			</p>
 			<span class="font-general-medium text-lg text-ternary-dark dark:text-ternary-light">{{ project.category
 				}}</span>
+		</div>
+		<!-- Conditionally display the 'Under Development' banner if the project isn't ready -->
+		<div v-if="project.status != 'done'"
+			class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center rounded-xl">
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white animate-pulse mb-4" fill="none"
+				viewBox="0 0 24 24" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+					d="M6.75 3.75h10.5m-9 16.5h7.5m-8.5 0a.75.75 0 00.75.75h8a.75.75 0 00.75-.75m-9-16.5a.75.75 0 01.75-.75h8a.75.75 0 01.75.75m-9 16.5V14a7.5 7.5 0 007.5 0v6.25m-7.5-16.5V10a7.5 7.5 0 007.5 0V3.75" />
+			</svg>
+			<span class="text-white text-2xl font-bold">Under development</span>
 		</div>
 	</router-link>
 
@@ -63,4 +73,5 @@ onMounted(() => {
 
 </script>
 
-<style lang="scss" scoped></style>
+
+<style scoped></style>
