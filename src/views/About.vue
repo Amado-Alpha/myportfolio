@@ -1,18 +1,19 @@
 <template>
-	<div>
-		<!-- About me -->
-		<div class="container mx-auto">
-			<AboutMe />
-		</div>
 
-		<!-- About counter -->
-		<AboutCounter />
+	<!-- About me -->
+	<div class="container mx-auto">
+		<AboutMe />
+	</div>
 
-		<!-- Clients -->
-		<!-- <div class="container mx-auto">
+	<!-- About counter -->
+	<!-- <AboutCounter /> -->
+
+	<AboutSkills />
+	<!-- Clients -->
+	<!-- <div class="container mx-auto">
 			<AboutClients />
 		</div> -->
-	</div>
+
 </template>
 
 
@@ -23,6 +24,7 @@ import feather from 'feather-icons';
 // Importing components
 import AboutMe from '@/components/about/AboutMe.vue';
 import AboutCounter from '@/components/about/AboutCounter.vue';
+import AboutSkills from '../components/about/AboutSkills.vue';
 import AboutClients from '@/components/about/AboutClients.vue';
 
 

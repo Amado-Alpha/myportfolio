@@ -6,12 +6,12 @@ const bios = ref([
 	{
 		id: 1,
 		bio:
-			"I am a passionate and skilled software developer with a strong foundation in modern web and mobile technologies. My expertise spans across Vue.js, Laravel, and Flutter, enabling me to craft seamless and dynamic applications tailored to meet diverse client needs. With a Bachelor's degree in Computer Engineering from the esteemed Dar Es Salaam Institute of Technology in Tanzania, I possess a solid technical background and a deep understanding of the principles that drive innovation in the software industry",
+			"I am a passionate and skilled software developer with a strong foundation in modern web and mobile technologies. My expertise spans across PHP, Vue.js, Laravel, Javascript, tailwind CSS and Flutter, enabling me to craft seamless and dynamic applications tailored to meet diverse client needs. With a Bachelor's degree in Computer Engineering from the esteemed Dar Es Salaam Institute of Technology in Tanzania, I possess a solid technical background and a deep understanding of the principles that drive innovation in the software industry",
 	},
 	{
 		id: 2,
 		bio:
-			'Throughout my academic and professional journey, I have honed my skills in designing, developing, and deploying robust software solutions that enhance user experiences and drive business growth. My work is characterized by a commitment to clean, efficient code and a dedication to continuous learning in the ever-evolving tech landscape.',
+			'Throughout my academic and professional journey, I have honed my skills in designing, developing, and deploying  software solutions that enhance user experiences. My work is characterized by a commitment to clean, efficient code and a dedication to continuous learning in the ever-evolving tech landscape.',
 	},
 ]);
 

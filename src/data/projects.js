@@ -3,7 +3,7 @@
 const projects = [
   {
     id: 1,
-    title: "electronics store dynamic website",
+    title: "Dynamic content company website",
     category: "Web Application",
     img: require("@/assets/images/web-project-2.jpg"),
     projectTag: "fullstack",
