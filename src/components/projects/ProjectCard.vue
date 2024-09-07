@@ -16,10 +16,10 @@
 		<!-- Conditionally display the 'Under Development' banner if the project isn't ready -->
 		<div v-if="project.status != 'done'"
 			class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center rounded-xl">
-			<svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white animate-pulse mb-4" fill="none"
-				viewBox="0 0 24 24" stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-					d="M6.75 3.75h10.5m-9 16.5h7.5m-8.5 0a.75.75 0 00.75.75h8a.75.75 0 00.75-.75m-9-16.5a.75.75 0 01.75-.75h8a.75.75 0 01.75.75m-9 16.5V14a7.5 7.5 0 007.5 0v6.25m-7.5-16.5V10a7.5 7.5 0 007.5 0V3.75" />
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white animate-wobble mb-4" viewBox="0 0 24 24"
+				fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+				<path d="M7 11V7a5 5 0 0110 0v4"></path>
 			</svg>
 			<span class="text-white text-2xl font-bold">Under development</span>
 		</div>
@@ -74,4 +74,42 @@ onMounted(() => {
 </script>
 
 
-<style scoped></style>
+<style scoped>
+/* Custom pulse animation */
+.animate-pulse {
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+}
+
+/* Wobble Animation */
+.animate-wobble {
+	animation: wobble 2s infinite;
+}
+
+@keyframes wobble {
+
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	25% {
+		transform: translateX(-5px);
+	}
+
+	75% {
+		transform: translateX(5px);
+	}
+}
+</style>
