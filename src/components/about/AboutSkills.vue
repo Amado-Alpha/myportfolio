@@ -16,7 +16,7 @@
                     </ul>
                 </div>
                 <!-- Soft Skills with Icons and Descriptions -->
-                <div class="col-span-1 md:col-span-2 sm:col-span-2 lg:col-span-3 bg-white  rounded-lg shadow-md p-6">
+                <div class="col-span-1 md:col-span-2 sm:col-span-2 lg:col-span-3 rounded-lg shadow-md p-6">
                     <h3 class="text-xl font-semibold mb-4 text-gray-500 dark:text-gray-100">Soft Skills</h3>
                     <div v-for="(skill, index) in skills.softSkills" :key="index"
                         class="mb-8 flex flex-col items-center">
