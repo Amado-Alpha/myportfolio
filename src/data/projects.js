@@ -88,6 +88,85 @@ const projects = [
 
   {
     id: 2,
+    title: "Global Weather Insights",
+    category: "Web Application",
+    img: require("@/assets/images/web-project-2.jpg"),
+    projectTag: "fullstack",
+    status: "done",
+
+    images: [
+      {
+        id: 1,
+        title: "Weather Dashboard UI",
+        img: require("@/assets/images/ui-project-1.jpg"),
+      },
+      {
+        id: 2,
+        title: "Interactive Weather Map",
+        img: require("@/assets/images/web-project-2.jpg"),
+      },
+      {
+        id: 3,
+        title: "Mobile Weather App View",
+        img: require("@/assets/images/mobile-project-2.jpg"),
+      },
+    ],
+
+    features: [
+      {
+        id: 1,
+        description:
+          "Real-time global weather data with interactive map visuals.",
+      },
+      {
+        id: 2,
+        description: "User-friendly interface with detailed weather forecasts.",
+      },
+      {
+        id: 3,
+        description:
+          "Dynamic updates with seamless integration of weather APIs.",
+      },
+      {
+        id: 4,
+        description:
+          "Responsive design to ensure smooth user experience on all devices.",
+      },
+    ],
+
+    projectObjective:
+      "To provide users with an engaging platform for accessing and exploring real-time global weather information through an interactive and user-friendly interface.",
+
+    technologies: ["HTML", "CSS", "JavaScript", "TailwindCSS", "Leaflet.js"],
+
+    link: "https://everylocationweather.netlify.app",
+
+    projectDetails: [
+      {
+        id: 1,
+        details:
+          "Created a dynamic weather application that integrates real-time weather data using the Leaflet API. The frontend, built with Vue.js and styled with TailwindCSS, offers an intuitive and engaging interface for users to explore weather conditions globally.",
+      },
+      {
+        id: 2,
+        details:
+          "Designed an interactive weather map that provides users with real-time visualizations of weather patterns. The map updates dynamically, giving users up-to-date information about weather conditions in different locations around the world.",
+      },
+      {
+        id: 3,
+        details:
+          "Implemented a responsive design that ensures the application functions smoothly across various devices, including desktops, tablets, and mobile phones. The application adapts to different screen sizes while maintaining a consistent and user-friendly experience.",
+      },
+      {
+        id: 4,
+        details:
+          "Ensured the application efficiently fetches and displays real-time weather data through API integration. This allows users to get accurate and timely weather information, enhancing their overall experience and interaction with the platform.",
+      },
+    ],
+  },
+
+  {
+    id: 3,
     title: "Innovative task tracking app",
     category: "Mobile Application",
     img: require("@/assets/images/mobile-project-2.jpg"),
@@ -95,7 +174,7 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Project Management UI",
     category: "UI/UX Design",
     img: require("@/assets/images/ui-project-1.jpg"),
@@ -103,18 +182,10 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Cloud Storage Platform",
     category: "UI/UX Design",
     img: require("@/assets/images/ui-project-2.jpg"),
-    status: "ongoing",
-  },
-
-  {
-    id: 5,
-    title: "Finance tracker",
-    category: "Mobile Application",
-    img: require("@/assets/images/mobile-project-1.jpg"),
     status: "ongoing",
   },
 
