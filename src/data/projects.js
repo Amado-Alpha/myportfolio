@@ -90,7 +90,7 @@ const projects = [
     id: 2,
     title: "Global Weather Insights",
     category: "Web Application",
-    img: require("@/assets/images/web-project-2.jpg"),
+    img: require("@/assets/images/weather2.png"),
     projectTag: "fullstack",
     status: "done",
 
@@ -98,17 +98,17 @@ const projects = [
       {
         id: 1,
         title: "Weather Dashboard UI",
-        img: require("@/assets/images/ui-project-1.jpg"),
+        img: require("@/assets/images/weather2.png"),
       },
       {
         id: 2,
         title: "Interactive Weather Map",
-        img: require("@/assets/images/web-project-2.jpg"),
+        img: require("@/assets/images/weather2.png"),
       },
       {
         id: 3,
         title: "Mobile Weather App View",
-        img: require("@/assets/images/mobile-project-2.jpg"),
+        img: require("@/assets/images/weather2.png"),
       },
     ],
 
